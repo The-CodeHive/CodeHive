@@ -23,8 +23,10 @@ window.onload = function() {
         // After loader is hidden, wait for 2 seconds before starting other animations
         setTimeout(() => {
           animateHeroContent();
-          startBackgroundVideo();
         }, 1000); // 1-second delay
+        setTimeout(() => {
+          startBackgroundVideo();
+        }, 3000);
       }
     });
 
@@ -71,7 +73,7 @@ function startBackgroundVideo() {
   bgVideo.play();
   gsap.to(bgVideo, {
     opacity: 1,
-    duration: 4,
+    duration: 10,
     ease: "power2.inOut"
   });
 }
