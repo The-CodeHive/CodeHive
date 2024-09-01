@@ -24,7 +24,7 @@ window.onload = function() {
         setTimeout(() => {
           animateHeroContent();
           startBackgroundVideo();
-        }, 1000); // 1-second delay
+        }, 2000); // 1-second delay
       }
     });
 
