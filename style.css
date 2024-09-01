@@ -149,7 +149,7 @@ body {
 }
 @media screen and (max-width: 768px) {
     .gradientText {
-      font-size: 5rem; /* Reduce font size */
+      font-size: 4.7rem; /* Reduce font size */
       background-size: 150%; /* Adjust background size */
     }
   }
