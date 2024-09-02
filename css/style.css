@@ -55,16 +55,7 @@ body {
     font-family: 'JetBrains Mono', monospace;
 }
 /* Hero Section */
-/* .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-} */
+
 .hero {
     position: relative;
     height: clamp(500px, 100vh, 100vh);
@@ -224,6 +215,7 @@ body {
 }
 
 .features-grid .feature {
+
     background: #100115;
     color: white;
     border-radius: 10px;
@@ -235,15 +227,21 @@ body {
 }
 
 .features-grid .feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
     position: relative; /* Ensure text stays above the glow */
     z-index: 2; /* Ensure text is above the glow */
 }
 
 .features-grid .feature p {
-    font-size: 1rem;
-    margin: 0;
+    font-family: "DM Mono", monospace;   
+    color: #a7a5c9ab;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-top: 20px;
     position: relative; /* Ensure text stays above the glow */
     z-index: 2; /* Ensure text is above the glow */
 }
@@ -267,6 +265,22 @@ body {
     opacity: 1; /* Show the glow on hover */
 }
 
+.language-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between icons */
+    margin-top: 10vh;
+    
+}
+
+.language-icons img {
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Adjust size as needed */
+    object-fit: contain;
+    z-index: 1;
+}
 
 
 /* Responsive Adjustments */
