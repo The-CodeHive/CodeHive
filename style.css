@@ -149,7 +149,7 @@ body {
 }
 @media screen and (max-width: 768px) {
     .gradientText {
-      font-size: 4.7rem; /* Reduce font size */
+      font-size: 5rem; /* Reduce font size */
       background-size: 150%; /* Adjust background size */
     }
   }
@@ -193,11 +193,10 @@ body {
 .features {
     padding: 60px 20px;
     text-align: center;
-    background-color: #010f15;
+    background-color: #0f0115;
 }
 
 .features h2 {
-    
     font-size: 3.5rem;
     margin-bottom: 75px;
     color: #ffffff;
@@ -225,30 +224,53 @@ body {
 }
 
 .features-grid .feature {
-    background: linear-gradient(45deg, rgb(0, 33, 63),rgb(91, 0, 77));
+    background: #100115;
     color: white;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    visibility: visible; /* Ensure visibility */
-    opacity: 1;
-    transform: scale(1);
+    box-shadow: 0px 0px 50px #220431ad;
+    position: relative; /* Create a context for the circle */
+    overflow: hidden; /* Hide the circle overflow */
+    z-index: 1; /* Ensure text is above the glow */
 }
 
 .features-grid .feature h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    position: relative; /* Ensure text stays above the glow */
+    z-index: 2; /* Ensure text is above the glow */
 }
 
 .features-grid .feature p {
     font-size: 1rem;
     margin: 0;
+    position: relative; /* Ensure text stays above the glow */
+    z-index: 2; /* Ensure text is above the glow */
+}
+
+.features-grid .feature .glow {
+    position: absolute;
+    border-radius: 50%;
+    background: #240431;
+    pointer-events: none;
+    filter: blur(30px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100px; /* Adjust size here */
+    height: 100px; /* Adjust size here */
+    z-index: 0; /* Ensure glow is behind the text */
+    opacity: 0; /* Start hidden */
+}
+
+.features-grid .feature:hover .glow {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; /* Show the glow on hover */
 }
 
 /* Footer Section */
 footer {
     padding: 20px;
-    background-color: rgb(91, 0, 77);
+    background-color: rgb(0, 0, 0);
     color: #f1f1f1;
     text-align: center;
 }
