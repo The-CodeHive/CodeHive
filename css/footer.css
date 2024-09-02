@@ -1,6 +1,6 @@
 /* Footer Styles */
 footer {
-    background: linear-gradient(180deg,  #100115, #290033);
+    background: linear-gradient(180deg,  #100115, #220431);
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -61,7 +61,7 @@ footer p {
 
 /* Optional Glow Effect for Footer Elements */
 .footer-links a, .footer-logo h2, footer p {
-    text-shadow: 0 0 10px rgb(255, 0, 140);
+    text-shadow: 0 0 10px #aa00ff;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {

@@ -73,7 +73,7 @@ function startBackgroundVideo() {
   bgVideo.play();
   gsap.to(bgVideo, {
     opacity: 1,
-    duration: 5,
+    duration: 2,
     ease: "power2.inOut"
   });
 }

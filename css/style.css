@@ -278,23 +278,44 @@ body {
 .language-icons {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between icons */
+    gap: 50px; /* Adjust spacing between icons */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
     margin-top: 10vh;
 }
 
 .language-icons img {
-    margin-top: 20px;
-    margin-right: 15px;
-    width: 100px; /* Adjust size as needed */
-    height: auto; /* Adjust size as needed */
-    object-fit: contain;
-    z-index: 99;
-    transition: filter 1s ease, transform 1s ease;
+    width: 150px; /* Default size */
+    height: auto;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    z-index: 8;
 }
 
 .language-icons img:hover {
     filter: drop-shadow(0 0 15px rgba(255, 0, 212, 0.682)); /* Glowing effect */
-    transform: scale(1.02); /* Slightly increase size on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Responsive Styles for Different Screen Sizes */
+@media (max-width: 1024px) {
+    .language-icons img {
+        width: 100px; /* Adjust size for tablets and small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .language-icons {
+        gap: 15px; /* Reduce spacing for smaller screens */
+    }
+
+    .language-icons img {
+        width: 70px; /* Adjust size for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .language-icons img {
+        width: 70px; /* Smaller size for very small screens */
+    }
 }
 
 
