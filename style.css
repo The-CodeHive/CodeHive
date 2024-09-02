@@ -147,9 +147,9 @@ body {
         background-position: 0%;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*for phones */
     .gradientText {
-      font-size: 5rem; /* Reduce font size */
+      font-size: 4.5rem; /* Reduce font size */
       background-size: 150%; /* Adjust background size */
     }
   }
