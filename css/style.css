@@ -82,6 +82,17 @@ body {
     object-fit: cover;
     z-index: -1;
 }
+
+.key-word {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Required for transform to work correctly */
+}
+
+.features-grid .feature:hover .key-word {
+    transform: scale(1.03); /* Scale up the text */
+    color: #00c6ff; /* Add underline on hover */
+}
+
 /* Hero Content Animation */
 .heroContent {
     position: relative;
@@ -215,7 +226,6 @@ body {
 }
 
 .features-grid .feature {
-
     background: #100115;
     color: white;
     border-radius: 10px;
@@ -236,7 +246,7 @@ body {
 }
 
 .features-grid .feature p {
-    font-family: "DM Mono", monospace;   
+    font-family: "DM Mono", monospace;
     color: #a7a5c9ab;
     text-align: justify;
     padding: 20px;
@@ -270,7 +280,6 @@ body {
     justify-content: center;
     gap: 30px; /* Space between icons */
     margin-top: 10vh;
-    
 }
 
 .language-icons img {
@@ -279,7 +288,13 @@ body {
     width: 100px; /* Adjust size as needed */
     height: auto; /* Adjust size as needed */
     object-fit: contain;
-    z-index: 1;
+    z-index: 99;
+    transition: filter 1s ease, transform 1s ease;
+}
+
+.language-icons img:hover {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 212, 0.682)); /* Glowing effect */
+    transform: scale(1.02); /* Slightly increase size on hover */
 }
 
 
