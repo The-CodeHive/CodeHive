@@ -21,7 +21,7 @@ CodeHive is a web-based, real-time collaborative code editor that allows develop
 
 ### Usage
 
-1. Visit [https://www.codehive.com](https://thecodehive.vercel.app/) in your web browser.
+1. Visit [https://thecodehive.vercel.app](https://thecodehive.vercel.app/) in your web browser.
 2. Sign up for an account or log in if you already have one.
 3. Create a new project or join an existing one using an invitation link.
 4. Start coding collaboratively!
