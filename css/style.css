@@ -1,3 +1,15 @@
+/* colors used: 
+    body : #000000 
+    features highlighted words: #00c6ff
+    hero p : #bdbdbd
+    features : #0f0115
+    features-grid: #100115
+    feature p : #a7a5c9ab
+    selection colors : 
+        bg: rgb(255, 0, 102)
+        txt color : #000000
+*/
+
 #loader {
     position: fixed;
     top: 0;
