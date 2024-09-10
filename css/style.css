@@ -35,7 +35,7 @@
 }
 .loaderTxt{
     font-family: 'JetBrains Mono', monospace;
-    font-size: x-small;
+    font-size: small;
     position: absolute;
     bottom: 0px;
 }
@@ -102,7 +102,7 @@ body {
 
 .features-grid .feature:hover .key-word {
     transform: scale(1.03); /* Scale up the text */
-    color: #00c6ff; /* Add underline on hover */
+    color: #ff00ea; /* Add underline on hover */
 }
 
 /* Hero Content Animation */
@@ -273,7 +273,7 @@ body {
     border-radius: 50%;
     background: #240431;
     pointer-events: none;
-    filter: blur(30px);
+    filter: blur(10px);
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: translate(-50%, -50%) scale(0);
     width: 100px; /* Adjust size here */
@@ -296,7 +296,7 @@ body {
 }
 
 .language-icons img {
-    width: 150px; /* Default size */
+    width: 90px; /* Default size */
     height: auto;
     transition: filter 0.3s ease, transform 0.3s ease;
     z-index: 8;
