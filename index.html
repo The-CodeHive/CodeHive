@@ -15,17 +15,30 @@
     <title>CodeHive - Collaborative Code Editor</title>
     
 </head>
-<body>
+<body class="light-mode">
     <div id="loader">
         <div class="loader-inner">
         </div>
         <p class="loaderTxt">Scroll Down when ever u feel right ↓</p>
       </div>
     <div class="hero">
-        <!-- Background Video -->
-        <video autoplay muted loop class="backgroundVideo" id="bgVideo">
+      <div class="video-container"> 
+
+        <!-- Dark Mode Video -->
+
+        <video id="darkModeVideo" class="backgroundVideo" autoplay muted loop>
             <source src="assets/video/0001-0120.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
+
+        <!-- Light Mode Video -->
+
+        <video id="lightModeVideo" class="backgroundVideo hidden" autoplay muted loop>
+            <source src="assets/video/2603663-hd_2048_1024_24fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+      </div> 
         
         <div class="heroContent">
             <h1 class="mainText">Welcome to<br> <span class="gradientText">CodeHive</span></h1>
@@ -38,6 +51,10 @@
     <!-- features section -->
     <section class="features">
         <h2 class="subText">Features</h2>
+        <label class="switch">
+            <input type="checkbox" id="lightModeToggle">
+            <span class="slider"></span>
+        </label>
         <div class="features-grid">
             <article class="feature">
                 <div class="glow"></div>
