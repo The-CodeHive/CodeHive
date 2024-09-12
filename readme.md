@@ -28,5 +28,7 @@ CodeHive is a web-based, real-time collaborative code editor that allows develop
 
 
 
+Now we work on NEXTJS14.
+
 
 Thank you for checking out CodeHive! We hope it enhances your collaborative coding experience.
