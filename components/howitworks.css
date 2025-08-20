@@ -1,0 +1,50 @@
+.how-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: var(--background);
+}
+
+.how-heading {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.how-step {
+  padding: 2rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(255,255,255,0.05);
+}
+
+.how-icon {
+  margin-bottom: 1rem;
+}
+
+.how-step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.how-step p {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+@media(max-width: 900px) {
+  .how-steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width: 600px) {
+  .how-steps { grid-template-columns: 1fr; }
+}
