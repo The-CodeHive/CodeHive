@@ -31,7 +31,7 @@
     "@types/react-dom": "^19",
     "concurrently": "^9.0.1",
     "@types/uuid": "^9.0.7",
-    "@types/jszip": "^3.10.6",
+    "@types/jszip": "^3.4.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
