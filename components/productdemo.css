@@ -1,0 +1,34 @@
+.demo-section {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.demo-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.demo-subtext {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.demo-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-media img {
+  max-width: 90%;
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.05);
+  box-shadow: 0 12px 30px rgba(255,255,255,0.08);
+  transition: transform 0.3s ease;
+}
+
+.demo-media img:hover {
+  transform: scale(1.02);
+}
