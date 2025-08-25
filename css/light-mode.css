@@ -1,0 +1,322 @@
+/* Light Mode */
+
+.light-mode body {
+
+    background-color: #ffffff;
+
+    color: #000000;
+
+}
+
+
+
+.hidden {
+
+    display: none;
+
+}
+
+/* The Switch Container */
+
+.switch {
+
+    position: relative;
+
+    display: inline-block;
+
+    left: 45%;
+
+    top: -120px;
+
+    width: 60px;
+
+    height: 34px;
+
+    margin: 0px; /* Adjust as needed */
+
+}
+
+
+
+/* Hide the checkbox (actual toggle functionality) */
+
+.switch input {
+
+    opacity: 0;
+
+    width: 0;
+
+    height: 0;
+
+}
+
+
+
+/* The Slider */
+
+.slider {
+
+    position: absolute;
+
+    cursor: pointer;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background-color: #ff00ea; /* Change slider background to active color */
+
+    transition: 0.4s;
+
+    border-radius: 34px;
+
+}
+
+
+
+/* Slider before being clicked */
+
+.slider:before {
+
+    position: absolute;
+
+    content: "";
+
+    height: 26px;
+
+    width: 26px;
+
+    left: 30px; /* Move thumb to the end by default */
+
+    bottom: 4px;
+
+    background-color: white;
+
+    transition: 0.4s;
+
+    border-radius: 50%;
+
+}
+
+
+
+/* On state (when checkbox is checked) */
+
+input:checked + .slider {
+
+    background-color: #9400d3; /* Change slider background to inactive color */
+
+}
+
+
+
+input:checked + .slider:before {
+
+    transform: translateX(-26px); /* Move the toggle thumb to the start */
+
+}
+
+
+
+/* Rounded slider */
+
+.slider {
+
+    border-radius: 34px;
+
+}
+
+.slider:before {
+
+    border-radius: 50%;
+
+}
+
+
+
+.light-mode #loader {
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.light-mode ::selection {
+
+    background: #9400d3;
+
+    color: #ffffff; 
+
+}
+
+
+
+.light-mode .loader-inner {
+
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150"><path fill="none" stroke="%23000000" stroke-width="7" stroke-linecap="round" stroke-dasharray="300 385" stroke-dashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg>');
+
+}
+
+
+
+.light-mode .loaderTxt {
+
+    color: #000000;
+
+    font-size: small;
+
+}
+
+
+
+.light-mode .mainText {
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .backgroundVideo {
+
+    filter: blur(0px);
+
+    position: absolute;
+
+    top: 0%;
+
+    left: 0%;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+
+}
+
+
+
+.light-mode .features {
+
+    background: #f0f0f5;
+
+    color: black;
+
+}
+
+
+
+.light-mode .features-grid .feature {
+
+    background: #f0f0f5;
+
+    color: black;
+
+    box-shadow: 0px 0px 50px #220431ad;
+
+}
+
+
+
+.light-mode .features h2 {
+
+    color: #333333;
+
+}
+
+
+
+.light-mode .features h3 {
+
+    color: #333333;
+
+}
+
+
+
+.light-mode .features-grid .feature p {
+
+    color: #333333;
+
+}
+
+
+
+.light-mode .features-grid .feature .glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    pointer-events: none;
+
+    filter: blur(10px);
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    transform: translate(-50%, -50%) scale(0);
+
+    width: 100px; /* Adjust size here*/ 
+
+    height: 100px; /* Adjust size here */ 
+
+    z-index: 0; /* Ensure glow is behind the text*/  
+
+    opacity: 0; /* Start hidden*/  
+
+} 
+
+.light-mode .features-grid .feature:hover .glow {
+
+    transform: translate(-50%, -50%) scale(1);
+
+    opacity: 1; /* Show the glow on hover */  
+
+}
+
+
+
+.light-mode .features-grid .feature:hover .key-word {
+
+    transform: scale(1.03); /* Scale up the text */
+
+    color: #aa00ff; /* Add underline on hover options #651fff, #6200ea, #9400d3, #8f00ff & #aa00ff */
+
+}
+
+
+
+.light-mode .hero p {
+
+    color: #333333;
+
+}
+
+
+
+.light-mode footer {
+
+    background: linear-gradient(180deg, #ffffff, #dddddd);
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .footer-links a {
+
+    color: #9400d3;
+
+}
+
