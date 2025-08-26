@@ -15,9 +15,13 @@ export default function Loader() {
       exit={{ y: "-100%" }} // slide completely off the top
       transition={{ duration: 0.8 }}
     >
-      <div className="w-[30vw] h-[30vw]">
+      <div className="w-[30vw] h-[30vw] max-w-[300px] max-h-[300px] 
+                      sm:w-[50vw] sm:h-[50vw] 
+                      md:w-[30vw] md:h-[30vw] 
+                      w-full h-auto mx-auto">
         <DotLottieReact src={LOTTIE_URL} loop autoplay />
       </div>
+
     </motion.div>
   );
 }

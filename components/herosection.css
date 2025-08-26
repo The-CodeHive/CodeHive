@@ -95,6 +95,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 
 .hero-button::after {
@@ -127,4 +128,68 @@
 .hero-button:focus-visible {
   outline: 3px dotted #ff0080;
   outline-offset: 4px;
+}
+
+
+/* Responsive Styles */
+
+/* Large Tablets / Small Desktops */
+@media (max-width: 1200px) {
+  .hero-heading {
+    font-size: 4.5rem;
+  }
+  .hero-description {
+    font-size: 2rem;
+  }
+  .hero-subtext {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  .hero-button {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+  .hero-description {
+    font-size: 1.7rem;
+  }
+  .hero-subtext {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+  .hero-button {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-heading {
+    max-width: 90vw;
+    font-size: 4rem;
+  }
+  .hero-description {
+    font-size: 2rem;
+  }
+  .hero-subtext {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-bottom: 2rem;
+  }
+  .hero-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  .top-left-logo{
+    width: 32px;
+    left: 10px;
+    top: 10px;
+  }
 }

@@ -59,3 +59,58 @@
   z-index: 2;
   pointer-events: all;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet */
+  .why-text-container {
+    width: 90vw;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .why-heading {
+    font-size: 4rem;
+  }
+
+  .why-subheading {
+    font-size: 1.5rem;
+  }
+
+  .why-description {
+    font-size: 1rem;
+  }
+
+  .why-spline-wrapper {
+    display: none; /* Hide Spline on tablet */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .why-section {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .why-heading {
+    font-size: 3.5rem;
+    max-width: 90vw;
+
+  }
+
+  .why-subheading {
+    font-size: 1.2rem;
+  }
+
+  .why-description {
+    font-size: 0.95rem;
+  }
+
+  .why-spline-wrapper {
+    display: none; /* Hide Spline on mobile */
+  }
+  
+  
+}

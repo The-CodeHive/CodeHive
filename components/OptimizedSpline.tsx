@@ -19,7 +19,7 @@ interface OptimizedSplineProps {
 export default function OptimizedSpline({
   scene,
   fallbackImage,
-  fallbackAlt = "Loading 3D scene...",
+  fallbackAlt = ".",
   fallback = null,
   scale = 1,
   className = "",
@@ -34,7 +34,7 @@ export default function OptimizedSpline({
         className="spline-fallback-image"
       />
     ) : (
-      <div className="spline-fallback">Loading...</div>
+      <div className="spline-fallback">.</div>
     ));
 
   return (
