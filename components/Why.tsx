@@ -14,7 +14,7 @@ export default function Why() {
         <OptimizedSpline
                   scene="https://prod.spline.design/wytpSYfK3JJfFXOV/scene.splinecode"
                   fallback=""
-                  scale={0.4} 
+                  scale={1} 
           />
       </div>
       <div className="why-text-container">

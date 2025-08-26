@@ -19,14 +19,14 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // Minimum 1.5s loader
+    }, 200); // Minimum 1.5s loader
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       <AnimatePresence>
-        {isLoading && <Loader />}
+        {isLoading && <Loader />} 
       </AnimatePresence>
 
       {!isLoading && (
