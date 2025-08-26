@@ -1,14 +1,20 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import Spline from '@splinetool/react-spline';
+import React, { useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import gsap from 'gsap';
+import OptimizedSpline from "@/components/OptimizedSpline";
 import './herosection.css';
 
+// Dynamically import Spline (no SSR)
+const Spline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
+
 export default function HeroSection() {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [showSpline, setShowSpline] = useState(false);
 
   useEffect(() => {
+    // Animate hero content
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { duration: 1, ease: "power4.out" } });
 
@@ -28,10 +34,31 @@ export default function HeroSection() {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    // Only load spline when hero is visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setShowSpline(true);
+        } else {
+          setShowSpline(false);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="hero-section playfair" ref={sectionRef}>
-      <div className="spline-wrapper">
-        <Spline scene="https://draft.spline.design/6cHvFqPmrPGeyMNE/scene.splinecode" />
+       <div className="spline-wrapper">
+        <OptimizedSpline
+          scene="https://draft.spline.design/6cHvFqPmrPGeyMNE/scene.splinecode"
+          fallback="/spline-fallback.png"
+          scale={0.6} 
+        />
       </div>
 
       <img src="/logo.png" alt="Logo" className="top-left-logo" />
@@ -42,7 +69,7 @@ export default function HeroSection() {
       <div className="hero-text-container">
         <h2 className="hero-description quicksand">Collaborative Code Editor</h2>
         <p className="hero-subtext dm-sans">Build, Share, and Collaborate in Real-Time</p>
-        <a href="https://codehive-8ilf.onrender.com/" target='_blank'>
+        <a href="https://codehive-8ilf.onrender.com/" target="_blank">
           <button className="hero-button quicksand">Start Developing</button>
         </a>
       </div>

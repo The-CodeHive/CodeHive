@@ -1,7 +1,7 @@
 "use client";
 
-import Spline from "@splinetool/react-spline";
 import React from "react";
+import OptimizedSpline from "@/components/OptimizedSpline";
 import "./why.css";
 
 export default function Why() {
@@ -11,10 +11,11 @@ export default function Why() {
     <section className="why-section">
       <div className="why-corner-div" />
       <div className="why-spline-wrapper">
-        <Spline
-          scene="https://prod.spline.design/wytpSYfK3JJfFXOV/scene.splinecode"
-          
-        />
+        <OptimizedSpline
+                  scene="https://prod.spline.design/wytpSYfK3JJfFXOV/scene.splinecode"
+                  fallback=""
+                  scale={0.4} 
+          />
       </div>
       <div className="why-text-container">
         <h1 className="why-heading bitmap-single">Why CodeHive?</h1>
