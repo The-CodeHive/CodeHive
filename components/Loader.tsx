@@ -1,7 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
+const LOTTIE_URL =
+  "https://lottie.host/c25c9b9c-a125-4ae8-8a69-29899de44e8a/lzMYyxaP4U.lottie";
 
 export default function Loader() {
   return (
@@ -13,11 +16,7 @@ export default function Loader() {
       transition={{ duration: 0.8 }}
     >
       <div className="w-[30vw] h-[30vw]">
-        <DotLottieReact
-          src="https://lottie.host/c25c9b9c-a125-4ae8-8a69-29899de44e8a/lzMYyxaP4U.lottie"
-          loop
-          autoplay
-        />
+        <DotLottieReact src={LOTTIE_URL} loop autoplay />
       </div>
     </motion.div>
   );

@@ -11,7 +11,7 @@ export default function HeroSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { duration: 1, ease: "power4.out" } });
+      const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "power4.out" } });
 
       tl.from(".spline-wrapper", { opacity: 0, duration: 1 })
         .from(".top-left-logo", { opacity: 0, y: -30 }, "+=0.2")

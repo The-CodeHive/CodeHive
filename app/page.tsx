@@ -14,22 +14,22 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 200); // Minimum 1.5s loader
+      setShowLoader(false);
+    }, 2000); // Always show loader for 2 seconds
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       <AnimatePresence>
-        {isLoading && <Loader />} 
+        {showLoader && <Loader />}
       </AnimatePresence>
 
-      {!isLoading && (
+      {!showLoader && (
         <main>
           <HeroSection />
           <Feature />
