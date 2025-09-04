@@ -1,0 +1,123 @@
+/* Light Mode */
+
+.light-mode body {
+
+    background-color: #ffffff;
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .about-us {
+
+    background-color: #f5f5f5;
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .about-us h1 {
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .about-us p {
+
+    color: #333333;
+
+}
+
+
+
+.light-mode .team-member {
+
+    background-color: #eaeaea;
+
+    box-shadow: 0px 0px 50px #220431ad;
+
+    box-sizing: border-box;
+
+}
+
+
+
+.light-mode .team-member h3 {
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .team-member p {
+
+    color: #555555;
+
+}
+
+
+
+.light-mode footer {
+
+    background: linear-gradient(180deg, #eaeaea, #d1d1d1);
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .footer-links a {
+
+    color: #000000;
+
+}
+
+
+
+.light-mode .footer-links a:hover {
+
+    color: #9400d3;;
+
+}
+
+
+
+.light-mode .footer-socials img {
+
+    filter: invert(0);
+
+}
+
+
+
+.light-mode footer p {
+
+    color: #555555;
+
+}
+
+
+
+.light-mode ::selection {
+
+    background: #9400d3;
+
+    color: #ffffff; 
+
+}
+
+
+
+::-webkit-scrollbar {
+
+    display: none;
+
+  }
