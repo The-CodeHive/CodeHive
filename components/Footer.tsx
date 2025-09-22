@@ -17,13 +17,13 @@ const Footer = () => {
         </div> */}
 
         <div className="footer-socials">
-          <a href="https://github.com/the-codehive" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jagdep-singh" target="_blank" rel="noopener noreferrer">
             <Github size={24} color="white" />
           </a>
           {/* <a href="mailto:jagdeep">
             <Mail size={24} color="white" />
           </a> */}
-          <a href="www.linkedin.com/in/jagdeep-singh-812986249" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jagdeep-singh-jazz/" target="_blank" rel="noopener noreferrer">
             <Linkedin size={24} color="white" />
           </a>
         </div>
