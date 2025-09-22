@@ -49,7 +49,7 @@ export default function HeroSection() {
         {showSpline && (
           
           <OptimizedSpline
-            scene="https://draft.spline.design/6cHvFqPmrPGeyMNE/scene.splinecode"
+            scene="https://prod.spline.design/MBw1iej-zgIfHI0t/scene.splinecode"
             scale={1}
             className="spline-wrapper"
           />
